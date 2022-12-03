@@ -8,7 +8,48 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
   }
+
+  :root {
+    --background:#6667AB; 
+  }
+
+  /*Name*/
+  header {
+    padding: 40px;
+    background: var(--background);
+    color: white;
+  }
+
+  /*Nav Bar Style*/
+  nav {
+    justify-content: baseline;
+    background: var(--background);
+    float: right;
+    font-size: 20px;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space;
+
+  }
+  nav li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
   
+  nav li {
+    display: inline-block;
+    margin-left: 75px; 
+    margin-right: 75px; 
+  }
+
+
   h1,
   h2,
   h3,
