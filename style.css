@@ -14,40 +14,63 @@
   }
 
   /*Name*/
-  header {
-    padding: 40px;
-    background: var(--background);
-    color: white;
-  }
+ 
 
   /*Nav Bar Style*/
-  nav {
-    justify-content: baseline;
-    background: var(--background);
-    float: right;
-    font-size: 20px;
-  }
-
-  h1 {
-    display: inline-block;
-  }
-
-  nav ul {
+  .navbar {
     display: flex;
-    justify-content: space;
-
-  }
-  nav li a {
-    list-style: none;
-    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--background);
     color: white;
   }
-  
-  nav li {
-    display: inline-block;
-    margin-left: 75px; 
-    margin-right: 75px; 
+
+  .name {
+    font-size: 2rem;
+    margin: 1rem;
   }
+
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar-links li {
+    list-style: none;
+  }
+
+  .navbar-links li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    padding: 2rem;
+    display: block;
+  }
+
+  /* Change the color of links on hover */
+nav a:hover {
+    background-color: rgb(176, 173, 173, 0.2);
+  }
+
+    /* Hamburger Menu
+    .toggle-button {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    } */
 
 
   h1,
@@ -63,9 +86,51 @@
     margin: 0;
   }
 
+  /* .hero-banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Assets/header.jpg");
+    height: 50vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+} */
+
   /* Phone View */
   @media screen and (max-width: 480px) {
-    body {
-      background-color: rgb(187, 255, 0);
+   
+    /* .toggle-button {
+        display: flex;
+    } */
+
+    .navbar-links {
+        display:flex;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
   }
+
