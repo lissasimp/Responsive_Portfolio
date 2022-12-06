@@ -1,89 +1,99 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    margin: 0;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    height: 100%;
-    background-color: #c9ada7;
-  }
+  box-sizing: border-box;
+}
 
-  :root {
-    --background:#22223b; 
-    --font: #9a8c98;
-    --font2:#f2e9e4;
-  }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  height: 100%;
+  background-color: #c9ada7;
+}
+
+:root {
+  --background: #22223b;
+  --font: #9a8c98;
+  --font2: #f2e9e4;
+}
 
 
-  /*Nav Bar Style*/
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:var(--background);
-    color: var(--font);
-  }
 
-  .name {
-    font-size: 2rem;
-    margin: 1rem;
-  }
+/*Nav Bar Style*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  color: var(--font);
+}
 
-  .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
+.name {
+  font-size: 2rem;
+  margin: 1rem;
+}
 
-  .navbar-links li {
-    list-style: none;
-  }
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-  .navbar-links li a {
-    text-decoration:underline;
-    font-size: 1.25rem;
-    color: var(--font2);
-    padding: 2rem;
-    display: block;
-  }
+.navbar-links li {
+  list-style: none;
+}
 
-  /* Change the color of links on hover */
+.navbar-links li a {
+  text-decoration: underline;
+  font-size: 1.25rem;
+  color: var(--font2);
+  padding: 2rem;
+  display: block;
+}
+
+/* Change the color of links on hover */
 nav a:hover {
-    background-color: rgb(176, 173, 173, 0.2);
-  }
+  background-color: rgb(176, 173, 173, 0.2);
+}
 
-  /*Hero Image*/
-  .img-container {
-    background-image: url(./Assets/pexels-tom-swinnen-2249961.jpg);
-    height: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+/*Hero Image*/
+.img-container {
+  background-image: url(./Assets/pexels-tom-swinnen-2249961.jpg);
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-  .inner-container {
-    position: absolute;
-    top: 30%;
-    left: 60%;
-    width:max-content;
-    padding: 20px;
-    height: auto;
-    background-color: rgb(152, 149, 149, 0.5);
-    border: 4px solid white;
-  }
-  
+.profile {
+  width: 200px;
+  border-radius: 40%;
+  padding: 10px;
+  margin: 20px;
+}
+
+
+.inner-container {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: max-content;
+  padding: 20px;
+  height: auto;
+  background-color: rgb(152, 149, 149, 0.5);
+  border: 4px solid white;
+}
+
 h2 {
-    font-size: 1.5rem;
-    font-weight: 200;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: oblique;
-    text-align: center;
-    color: var(--background);
-  }
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: oblique;
+  text-align: center;
+  color: var(--background);
+}
 
 /* Sidebar style */
 .heading {
@@ -112,7 +122,12 @@ h2 {
 
 .heading h3 {
   font-size: 48px;
-  color:var(--background);
+  color: var(--background);
+}
+
+.heading h4 {
+  font-size: 48px;
+  color: var(--font);
 }
 
 .work {
@@ -120,7 +135,6 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-
 
 .gridcontainer {
   width: 85%;
@@ -142,7 +156,7 @@ h2 {
   color: var(--background);
   display: flex;
   justify-content: baseline;
-  align-items:center;
+  align-items: center;
   text-decoration: none;
   background-size: cover;
   background-position: center;
@@ -152,118 +166,89 @@ h2 {
 .refactor {
   grid-column: 1/3;
   grid-row: span 2;
-  background-image: url("./Assets/placeholder.png");
-  background-size:900px 600px;
+  background-image: url(./Assets/Horiseon.PNG);
   background-repeat: no-repeat;
 }
 
 .study-guide {
-  background-image: url;
-  background-position: 50% 15%;
+  background-image: url("./Assets/Prework.PNG");
 }
 
 .placeholder1 {
-  background-image: url;
-  background-position: 60% 50%;
+  background-image: url("./Assets/placeholder.png");
 }
 
 .placeholder2 {
-  background-image: url;
+  background-image: url("./Assets/placeholder.png");
 }
 
 .placeholder3 {
-  background-image: url;
+  background-image: url("./Assets/placeholder.png");
 }
 
 .item-content {
-  /*background-color: var(--secondary);*/
-  background-color: rgb(149, 142, 142, 0.5);;
   font-size: 1.5rem;
   padding: 0px;
   line-height: 0.3;
 }
 
-.item-content:hover {
-  opacity: 1.0;
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
-  /* section {
-    background-color: rgb(255, 253, 253);
-    display: flex;
-    justify-content:space-between;
-    padding: 60px;
-    width: 100%;
-    margin: 0;
-  }
+.content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  section text {
-    align-content: right;
-  }
+#contact {
+  width: 60%;
+}
 
-  section h3 {
-padding-right: 20%;
-color: var(--background);
-font-size: 3rem;
-  }
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 30px;
+}
 
-  section content {
-    color: var(--background);
-    padding: 20px;
-  }
-  
-  .largeimage {
-  width: 50%;
-  height: 50%;
-  } */
+footer ul li a {
+  text-decoration: underline;
+  color: var(--background);
+  padding: 8px;
+}
 
+@media screen (max-width: 400px) {
 
-/*Grid*/
+.navbar-links {
+display: none;
+width: 100%;
+}
 
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
 
+.navbar-links ul {
+  width: 100%;
+flex-direction: column;
+}
 
+.navbar-links li {
+  text-align: center;
+}
 
-    /* Hamburger Menu
-    .toggle-button {
-        position: absolute;
-        top: 0.75rem;
-        right: 1rem;
-        display: none;
-        flex-direction: column;
-  
-
-    .navbar-links {
-        display:flex;
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links li a {
-        padding: 0.5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-
-    .inner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h2 {
-    font-size: 1.4em;
-  }
+.navbar-links.active {
+  display:flex;
+}
+}
