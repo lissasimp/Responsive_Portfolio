@@ -1,4 +1,4 @@
-# Homework2_Responsive_Portfolio
+# Responsive_Portfolio
 
 This project is about creating a portfolio of work to **showcase my skills and talents to employers looking to fill a part-time or full-time position.** THis portfolio highlights my work to date as well as the thought processes behind it. This portfolio will be added to and developed as my own personal knowledge deepens and I have my projects to showcase to potential employers.
 
